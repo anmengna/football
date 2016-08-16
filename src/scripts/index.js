@@ -14,6 +14,7 @@ require('./views/search');
 require('./views/user');
 require('./views/register');
 require("./views/prompt");
+require("./views/login");
 
 SPA.config({
 	indexView:"guide"
