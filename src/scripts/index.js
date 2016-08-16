@@ -20,4 +20,4 @@ SPA.config({
 	indexView:"index"
 })
 
-console.log("word");
+console.log("hello");
