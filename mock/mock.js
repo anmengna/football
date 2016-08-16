@@ -1,0 +1,16 @@
+module.exports={
+	rules:[
+		{
+			pattern:/\/api\/livelist.php\?rtype=origin$/,
+			respondwith:"./livelist.json"
+		},
+		{
+			pattern:/\/api\/more-livelist.php\?rtype=more$/,
+			respondwith:"./refresh-livelist.json"
+		},
+		{
+			pattern:/\/api\/refresh-livelist.php\?rtype=refresh$/,
+			respondwith:"./refresh-livelist.json"
+		}
+	]
+}

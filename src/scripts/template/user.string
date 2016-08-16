@@ -1,0 +1,20 @@
+<div class="yo-dialog yo-dialog-a">
+    <header class="hd">
+        <h2 class="title">登录</h2>
+        <i class="yo-ico" action-type="close.hide">&#xf077;</i>
+    </header>
+    <div class="bd">
+        <div class="yo-list">
+            <label class="item item-input">
+                <input type="text" placeholder="用户名" class="yo-input">
+            </label>
+            <label class="item item-input">
+                <input type="text" placeholder="密码" class="yo-input">
+            </label> 
+        </div>
+    </div>
+    <footer class="ft">
+        <button class="yo-btn yo-btn-dialog yo-btn-l" action-type="goto.register">立即注册</button>
+        <button class="yo-btn yo-btn-dialog yo-btn-l" action-type="close.hide">确定</button>
+    </footer>
+</div>

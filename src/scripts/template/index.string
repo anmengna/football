@@ -1,0 +1,27 @@
+<div class="m_container">
+	<div class="m_main">
+	</div>
+	<footer>
+		<ul>
+			<li action-type="switch.tabs" data-tag="home" class="active">
+				<i class="yo-ico">&#xe6bb;</i>
+				<b>首页</b>
+			</li>
+			<li action-type="switch.tabs" data-tag="search">
+				<i class="yo-ico">&#xe65c;</i>
+				<b>发现</b>
+			</li>
+			<li>
+				<i class="yo-ico">&#xe664;</i>
+			</li>
+			<li action-type="goto.user" data-tag="user">
+				<i class="yo-ico">&#xe735;</i>
+				<b>我的</b>
+			</li>
+			<li action-type="switch.quit">
+				<i class="yo-ico">&#xe603;</i>
+				<b>退出</b>
+			</li>
+		</ul>
+	</footer>
+</div>

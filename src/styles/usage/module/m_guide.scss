@@ -1,0 +1,17 @@
+#swiper-container{
+	width:100%;
+	height:100%;
+	img{
+		width:100%;
+		height:100%;
+	}
+	.swiper-slide:last-child{
+		b{
+			position:absolute;
+			width:1.2rem;
+			height:.26rem;
+			right:.8rem;
+			bottom:.85rem;
+		}
+	}
+}

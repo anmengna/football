@@ -1,0 +1,67 @@
+<header>
+		<ul>
+			<li>
+				<i class="yo-ico menu">&#xe745;</i>
+			</li>
+			<li>
+				<ul id="title">
+					<li action-type="switch.tab">热点</li>
+					<li action-type="switch.tab" class="active">关注</li>
+				</ul>
+			</li>
+			<li>
+				<i class="yo-ico sm">&#xe684;</i>
+			</li>
+		</ul>
+</header>
+<div class="swiper-container" id="swiper-hot">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <nav>
+				<ul id="nav">
+					<li action-type="switch.tap" class="active">足球现场</li>
+					<li action-type="switch.tap">足球生活</li>
+					<li action-type="switch.tap">足球美女</li>
+				</ul>
+			</nav>
+			<div class="swiper-container" id="swiper-home">
+   			   	<div class="swiper-wrapper">
+        			<div class="swiper-slide">
+        				<div class="scroller" spa-widget="scroll" data-scroll-id="homeListScroll">
+        					<div>
+        						<div class="head">
+        							<img src="/webappcourse/images/arrow.png">
+        							<span>下拉刷新......</span>
+        						</div>
+           						<ul ms-repeat-value="livelist">
+									<li>
+										<img ms-src="value[0].img"/>
+										<b ms-text="value[0].title"></b>
+									</li>
+									<li></li>
+									<li ms-class-hide="!value[1]">
+										<img ms-src="value[1].img"/>
+										<b ms-text="value[1].title"></b>
+									</li>
+								</ul>
+								<div class="foot">
+        							<img src="/webappcourse/images/arrow.png">
+        							<span>上拉加载......</span>
+        						</div>
+       			    		</div>
+       			    	</div>
+       			    </div>
+		            <div class="swiper-slide">
+		            	足球生活.....
+		            </div>
+			        <div class="swiper-slide">
+			        	足球美女......
+			        </div>
+    			</div>
+			</div>
+        </div>
+        <div class="swiper-slide">
+             关注。。。。。。
+        </div>
+    </div>
+</div>

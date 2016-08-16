@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+
+html,body{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+@import "../lib/core/reset";
+@import "./core/common";
+@import "./core/swiper-3.3.1.min.css";
+
+@import "./module/m_guide";
+@import "./module/m_index";
+@import "./module/m_home";
+@import "./module/m_search";
+@import "../lib/widget/yo-dialog";
+@import "./module/m_user";
+@import "./module/m_register";
+@import "./module/m_prompt";
+
+
+
+
+
+// 定制 qapp 样式
+spa-app {
+    position: absolute;
+    overflow: hidden;
+}
+
+spa-view {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background:#fff !important;
+    width: 100%;
+    @include flexbox(flex);
+    @include flex-direction(column);
+}
+
+.popup-mask {
+  @include fullscreen();
+  background-color: rgba(0,0,0,0.5);
+  height: 100%;
+}

@@ -1,0 +1,17 @@
+<div class="swiper-container" id="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="/webappcourse/images/slide1.png">
+        </div>
+        <div class="swiper-slide">
+             <img src="/webappcourse/images/slide2.png">
+        </div>
+        <div class="swiper-slide">
+             <img src="/webappcourse/images/slide3.png">
+        </div>
+         <div class="swiper-slide">
+             <img src="/webappcourse/images/slide4.png">
+             <b action-type="go.index"></b>
+        </div>
+    </div>
+</div>

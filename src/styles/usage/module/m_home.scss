@@ -1,0 +1,180 @@
+.m_container{
+	.m_main{
+		@include flexbox();
+		@include flex(1);
+		@include flex-direction(column);
+		width:100%;
+		height:100%;
+		header{
+            height:.44rem;
+            background:#0cc140;
+            >ul{
+                @include flexbox();
+                width:100%;
+                height:100%;
+                position:relative;
+                >li{
+                    width:.44rem;
+                    height:100%;
+                    color:#fff;
+                    font-size:.2rem;
+                    text-align:center;
+                    &.menu{
+	                    position:absolute;
+	                    top:.05rem;
+	                    left:.08rem;
+                	}
+                	&.sm{
+	                    position:absolute;
+	                    top:.07rem;
+	                    right:.08rem;
+                	}
+	                &:nth-child(2){
+	                   @include flexbox();
+	                   @include flex(1);
+	                   @include justify-content(center);
+	                   @include align-items(center);
+	                   ul{
+	                      width:1.18rem;
+	                      height:0.25rem;
+	                      background:#abcdef;
+	                      @include flexbox();
+	                      font-size:.12rem;
+	                      color:rgba(255,255,255,0.7);
+	                      background:rgba(100,217,133,0.7);
+	                      @include border-radius(.5rem);
+	                      overflow:hidden;
+	                      li{
+	                         width:0.59rem;
+	                         height:.25rem;
+	                         text-align:center;
+	                         line-height:.25rem;
+	                         &.active{
+	                             color:rgba(255,255,255,1);
+	                             background:rgba(100,217,133,1);
+	                         }
+	                      }
+	                   }
+	                }
+            	}
+         	}
+      	}
+		#swiper-hot{
+			@include flexbox();
+			@include flex(1);
+			@include flex-direction(column);
+			width:100%;
+			height:100%;
+			>.swiper-wrapper{
+				width:100%;
+				height:100%;
+				.swiper-slide:first-child{
+					nav{
+						height:.35rem;
+						ul{
+							@include flexbox();
+							width:100%;
+							height:100%;
+							li{
+								@include flex(1);
+								height:100%;
+								@include border(0 0 1px 0,#d9d9d9);
+								@include box-sizing(border-box);
+								line-height:.35rem;
+								text-align:center;
+								font-size:.12rem;
+								color:#666;
+								&.active{
+									color:#0dc441;
+									@include border(0,#d9d9d9);
+									border-bottom:2px solid #0dc441;
+								}
+							}
+						}
+					}
+					#swiper-home{
+						@include flex(1);
+						width:100%;
+						height:100%;
+						overflow:hidden;
+						position:relative;
+						.scroller{
+							width:100%;
+							height:100%;
+							margin-top:.05rem;
+							padding-bottom:.05rem;
+							>div{
+								position:absolute;
+								width:100%;
+								ul{
+									@include flexbox();
+									margin-bottom:.05rem;
+									li{
+										&:not(:nth-child(2)){
+											@include flex(1);
+											@include border(1px,#d9d9d9);
+										}
+										&:nth-child(2){
+											width:.05rem;
+										}
+										img{
+											width:100%;
+										}
+										&.hide{
+											visibility:hidden;
+										}
+										b{
+											display:block;
+											text-align:center;
+											@include border(1px 0 0 0,#d9d9d9);
+											padding:.06rem .04rem;
+											font-size:.12rem;
+											font-weight:normal;
+											overflow:hidden;
+											white-space:nowrap;
+											text-overflow:ellipsis;
+										}
+									}
+								}
+								>div.head{
+									text-align:center;
+									height:.3rem;
+									line-height:.3rem;
+									img{
+										width:.13rem;
+										height:.13rem;
+										margin-bottom:.02rem;
+										display:inline-block;
+										-webkit-transform:rotate(180deg);
+										-webkit-transition:transform 150ms;
+									}
+								}
+								>div.foot{
+									text-align:center;
+									height:.3rem;
+									line-height:.3rem;
+									img {
+			                            width: .13rem;
+			                            height: .13rem;
+			                            margin-bottom: 0.04rem;
+			                            display: inline-block;
+			                            transition: transform 150ms;
+			                            -webkit-transition: transform 150ms;
+			                        }
+								}
+								.up {
+		                           transform: rotate(360deg) !important;
+		                           -webkit-transform: rotate(360deg) !important;
+		                        }
+		                        .down{
+		                           transform: rotate(180deg) !important;
+		                           -webkit-transform: rotate(180deg) !important;
+		                        }
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

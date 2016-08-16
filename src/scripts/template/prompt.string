@@ -1,0 +1,8 @@
+<div class="yo-dialog yo-dialog-test">
+    <div class="bd">
+        <p>手机号、密码或昵称不能为空</p>
+    </div>
+    <footer class="ft">
+        <button class="yo-btn yo-btn-dialog yo-btn-l" action-type="tap.close">确定</button>
+    </footer>
+</div>
