@@ -16,5 +16,5 @@ require('./views/register');
 require("./views/prompt");
 
 SPA.config({
-	indexView:"guide"
+	indexView:"index"
 })
