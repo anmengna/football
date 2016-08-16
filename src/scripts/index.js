@@ -19,3 +19,5 @@ require("./views/login");
 SPA.config({
 	indexView:"index"
 })
+
+console.log("word");
